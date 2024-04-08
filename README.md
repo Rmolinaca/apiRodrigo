@@ -22,5 +22,5 @@ API CREACION DE USUARIO
 }
 
 7.- Revisar la respuesta.
-
+8.- La base de datos H2 se encuentra en la ruta http://localhost:8080/h2-ui/ y su usuario es "admin" y su clave es "1234"
 El diagrama se encuentra en la carpeta Documentacion.
