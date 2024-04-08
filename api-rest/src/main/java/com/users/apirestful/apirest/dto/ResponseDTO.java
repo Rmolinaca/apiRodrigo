@@ -10,10 +10,6 @@ public class ResponseDTO {
 
 	private String mensaje;
 	
-	public String getErrorMessage(String mensaje) {
-		return "{\"mensaje\": \"" + mensaje + "\"}";
-	}
-
 	public String getMensaje() {
 		return mensaje;
 	}
