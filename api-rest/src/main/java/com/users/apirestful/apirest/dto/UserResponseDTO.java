@@ -1,25 +1,11 @@
-package com.users.apirestful.apirest.model;
+package com.users.apirestful.apirest.dto;
 
 import java.util.Date;
 import java.util.List;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+public class UserResponseDTO {
 
-@Entity
-@Table(name = "users")
-public class User {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "USER_ID")
-	private Long userId;
+	private String userId;
 
 	private String name;
 
@@ -27,8 +13,7 @@ public class User {
 
 	private String password;
 
-	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-	private List<Phone> phones;
+	private List<PhoneDTO> phones;
 
 	private String token;
 
@@ -40,38 +25,15 @@ public class User {
 
 	private Boolean isactive;
 
-	public User() {
+	public UserResponseDTO() {
 		super();
 	}
 
-	public User(Long userId, String name, String email, String password, List<Phone> phones, String token, Date created,
-			Date modified, Date lastLogin, Boolean isactive) {
-		super();
-		this.userId = userId;
-		this.name = name;
-		this.email = email;
-		this.password = password;
-		this.phones = phones;
-		this.token = token;
-		this.created = created;
-		this.modified = modified;
-		this.lastLogin = lastLogin;
-		this.isactive = isactive;
-	}
-
-	public User(String name, String email, String password, List<Phone> phones) {
-		super();
-		this.name = name;
-		this.email = email;
-		this.password = password;
-		this.phones = phones;
-	}
-
-	public Long getUserId() {
+	public String getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
@@ -99,11 +61,11 @@ public class User {
 		this.password = password;
 	}
 
-	public List<Phone> getPhones() {
+	public List<PhoneDTO> getPhones() {
 		return phones;
 	}
 
-	public void setPhones(List<Phone> phones) {
+	public void setPhones(List<PhoneDTO> phones) {
 		this.phones = phones;
 	}
 

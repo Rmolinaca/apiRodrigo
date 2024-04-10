@@ -17,6 +17,13 @@ public class PhoneDTO {
 		this.contrycode = phone.getContrycode();
 	}
 
+	public PhoneDTO(Integer number, Integer citycode, Integer contrycode) {
+		super();
+		this.number = number;
+		this.citycode = citycode;
+		this.contrycode = contrycode;
+	}
+
 	public PhoneDTO() {
 		super();
 	}

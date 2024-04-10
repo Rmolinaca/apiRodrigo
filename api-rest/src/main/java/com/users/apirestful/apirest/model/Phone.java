@@ -26,7 +26,6 @@ public class Phone {
 	@JoinColumn(name = "USER_ID")
 	private User user;
 
-	
 	public Phone(Long idPhone, Integer number, Integer citycode, Integer contrycode, User user) {
 		super();
 		this.idPhone = idPhone;
@@ -35,11 +34,10 @@ public class Phone {
 		this.contrycode = contrycode;
 		this.user = user;
 	}
-	
+
 	public Phone() {
 		super();
 	}
-	
 
 	public Long getIdPhone() {
 		return idPhone;

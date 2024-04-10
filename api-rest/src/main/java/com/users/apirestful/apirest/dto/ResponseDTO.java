@@ -9,7 +9,7 @@ public class ResponseDTO {
 	public static final String EXIST_MAIL = "El correo ya registrado.";
 
 	private String mensaje;
-	
+
 	public String getMensaje() {
 		return mensaje;
 	}
@@ -18,5 +18,4 @@ public class ResponseDTO {
 		this.mensaje = mensaje;
 	}
 
-	
 }
