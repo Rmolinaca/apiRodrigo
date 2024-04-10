@@ -35,7 +35,7 @@ Asegúrese de tener instalados los siguientes elementos en su entorno de desarro
    
 5. **Configurar la Aplicación en Eclipse :**
 
-   Realizar un maven update y agregar la Classpath de spring-tool
+   Realizar un maven update y agregar la Classpath de spring-tool.
   
 6. **Ejecutar la Aplicación**
 
